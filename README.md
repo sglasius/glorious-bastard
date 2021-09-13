@@ -1,5 +1,5 @@
 # Play
-Live demo: www.blaatjes.nl
+Live demo: www.blaatjes.nl  
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.4.
 * npm install
 * ng serve --open to run the project
