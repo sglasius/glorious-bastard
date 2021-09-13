@@ -1,8 +1,6 @@
 # Play
 Live demo: www.blaatjes.nl  
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.4.
-* npm install
-* ng serve --open to run the project
 
 # Remarks
 Really fun to play with the home made timelapse. I hope the dev has autoplay enabled in his/her browser.
