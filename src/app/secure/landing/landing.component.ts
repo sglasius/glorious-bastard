@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ValidationComponent } from '../validation/validation.component'
 
 @Component({
   selector: 'app-landing',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private validation: ValidationComponent
+  ) { }
 
   ngOnInit() {
+  }
+  next: boolean = false;
+
+  triggerValidation() {
+    this.validation.validateObjects();
+    this.next = true;
   }
 
 }

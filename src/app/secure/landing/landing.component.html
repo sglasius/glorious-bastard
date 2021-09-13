@@ -1,9 +1,23 @@
-<video autoplay muted loop id="backgroundVideo">
+<video muted autoplay loop playsinline id="backgroundVideo">
   <source src="../../../assets/mov/background-website.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
+<script>
+  document.getElementById('backgroundVideo').play();
+</script>
+
+<div class="container">
+  <div class="center">
+    <button id="myBtn" (click)="triggerValidation()">Start Validation</button>
+    <div *ngIf="next">
+      <app-validation></app-validation>
+    </div>
+  </div>
+
+</div>
 
 <div class="overlayContent">
-  <h1>Heading</h1>
-  <p>Lorem ipsum...</p>
+  <h1>A Person drives with a Car to a Bar</h1>
+  <p>A Validation story ...</p>
+  <p>Best experienced from the console</p>
 </div>
